@@ -15,4 +15,4 @@ Required python packages : requests, pandas, matplotlib, json
 Run `python singleAPICall.py`
 
 ## Contact
-Feel free to open an issue on github, send pull request or contact us at bber@unm.edu more contact info on: https://bber.unm.edu/contact-information
+Feel free to open an issue on github, send pull request or contact us at bber@unm.edu more contact info on: https://bber.unm.edu/about/contact/
