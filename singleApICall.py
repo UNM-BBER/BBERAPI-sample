@@ -25,14 +25,14 @@ def setParameters(dataFilters):
     ownership = dataDictionary['ownership'][dataFilters['ownership']]
     adjusted = dataFilters['adjusted']
 
-    API_URL = f'https://api.bber.unm.edu/data/rest/bbertable?table={table}&stfips={stfips}&areatype={areaType}&area={area}&periodtype={periodType}&periodyear={periodYear}&indcode={indcode}&ownership={ownership}&adjusted={adjusted}'
+    API_URL = f'https://api.bber.unm.edu/api/data/rest/bbertable?table={table}&stfips={stfips}&areatype={areaType}&area={area}&periodtype={periodType}&periodyear={periodYear}&indcode={indcode}&ownership={ownership}&adjusted={adjusted}'
 
     return API_URL
 
 
 def getData(apiUrl):
     '''
-    param : apiUrl Eg: https://api.bber.unm.edu/data/rest/bbertable?table=covid19&stfips=35
+    param : apiUrl Eg: https://api.bber.unm.edu/api/data/rest/bbertable?table=covid19&stfips=35
 
     this function expects a string that follows BBER API specs. Refer to https://bber.unm.edu/apidoc for more information.
     '''
